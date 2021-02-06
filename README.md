@@ -20,12 +20,11 @@ ICMP layer \
   - data 96 bytes \
 (source: https://xenanetworks.com/?knowledge-base=knowledge-base/valkyrie/downloads/pcap-samples) \
 
-The script open/read packet file, loop over each packet, if the packet \
-has a layer ICMP, it will calculate the length of the payload and if \
-it the length IP layer + ICMP layer is higher than 84 bytes of length, the \
-ping packet is considered suspicious. \
-For information, as defined in RFC 791, the maximum packet of an IPv4 packet including \
-the IP header is 65535 bytes. \
+The script open and read network trace, loop over each network frame, if a frame \
+has ICMP layer, it will calculate the length of the packet payload (IP layer + ICMP layer) \
+if this length is higher than 84 bytes of length, the packet is considered suspicious. \
+For more information, as defined in RFC 791, the maximum packet of an IPv4 packet \
+including the IP header is 65535 bytes. \
 
 https://en.wikipedia.org/wiki/Ping_(networking_utility) \
 https://en.wikipedia.org/wiki/Ping_of_death \
