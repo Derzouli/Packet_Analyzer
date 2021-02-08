@@ -3,7 +3,7 @@ Packet_Analyzer
 Network packet attack analyzer.
 Analyze network packet using Scapy
 
-1/ Ping of Death \
+1/ Ping of Death
 ------------------
 Ping operates by sending ICMP echo request packets to the target host and \
 waiting for an ICMP echo reply.
