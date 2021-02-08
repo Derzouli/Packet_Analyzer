@@ -7,6 +7,7 @@ Analyze network packet using Scapy
 ------------------
 Ping operates by sending ICMP echo request packets to the target host and \
 waiting for an ICMP echo reply.
+
 Normal packet: (pcap: normal_ping.pcapng)
 -----------------------------------------
 IP layer 20 bytes: \
